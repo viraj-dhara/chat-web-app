@@ -27,7 +27,7 @@ urlpatterns = [
 
 
 
-if not settings.TESTING:
-    urlpatterns = [
-        *urlpatterns,
-    ] + debug_toolbar_urls()
+# if not settings.TESTING:
+#     urlpatterns = [
+#         *urlpatterns,
+#     ] + debug_toolbar_urls()
