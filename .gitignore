@@ -4,7 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
 #custom:-
-virtual_env/
+virtual_env/  ## this was later made useless by vscode making me switch to its own venv (".venv") 
 
 # User-specific files
 *.rsuser
