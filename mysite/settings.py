@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-# import os
+import os
 import sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-&ow4zd!nvc#!4jbb-ner3cd5i)6!wy%hyygk(_4%twr=l5bzev
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'www.example.com']
 
 
 # Application definition
@@ -115,6 +115,13 @@ TIME_ZONE = 'Asia/Kolkata'
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = '/home/viraj/chat-web-app/static'
+
+# settings.py
+STATICFILES_DIRS = [
+    '/home/viraj/chat-web-app/polls/static',
+]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
