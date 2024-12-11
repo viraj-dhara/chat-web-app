@@ -1,2 +1,2 @@
-# chat-web-app
-Simple Website which allows you to chat in real time with other users
+# polls-app
+Simple Website which allows you to vote on questions added by admin
