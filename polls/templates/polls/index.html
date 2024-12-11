@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en-US">
   <head>
-    <link rel="stylesheet" href="https://localhost:8080/static/polls/static/style.css">
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
     <meta charset="utf-8" />
     <title>My test page</title>
   </head>
@@ -17,5 +17,15 @@
     {% else %}
         <p>No polls are available.</p>
     {% endif %}
+
+    <script>
+      const socket = new WebSocket('ws://' + window.location.host + '/ws/somepath/');
+
+      socket.onmessage = function(event) {
+          const data = JSON.parse(event.data);
+          console.log(data.message);
+      };
+    </script>
+
   </body>
 </html>

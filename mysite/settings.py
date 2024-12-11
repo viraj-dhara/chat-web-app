@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'channels',
+    
 ]
 
 MIDDLEWARE = [
@@ -118,9 +120,9 @@ STATIC_URL = 'static/'
 STATIC_ROOT = '/home/viraj/chat-web-app/static'
 
 # settings.py
-STATICFILES_DIRS = [
-    '/home/viraj/chat-web-app/polls/static',
-]
+# STATICFILES_DIRS = [
+#     '/home/viraj/chat-web-app/polls/static',
+# ]
 
 
 # Default primary key field type
